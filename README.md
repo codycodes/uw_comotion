@@ -1,3 +1,3 @@
-# CoMotion_MakerSpace
+# UW CoMotion
 
-Automation code for the CoMotion MakerSpace
+A collection of code that we've created to increase productivity and happiness throughout [University of Washington's CoMotion Labs] (https://comotion.uw.edu/)
