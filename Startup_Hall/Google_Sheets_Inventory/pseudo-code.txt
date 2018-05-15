@@ -1,0 +1,23 @@
+//Need a streamlined layout for every sheet. Format of the inventory should be, on each column from left to right:
+//Item Name, Location, Quantity, Units, Minimum Quantity, Mailed Ashlee Checkbox
+
+function StatusCheck() {
+    boolean row_empty = false;
+    while(!row_empty){
+        if(quantity col. <= minimum qty. col.){
+            if(!ashlee_emailed){
+                //highlight row green
+            } else {
+                //highlight row yellow
+            }
+        }
+        //check the next row if it's empty
+        if(next row empty){
+          row_empty = true;
+        } //this should stop the while loop
+    }
+}
+
+//Pseudo code is very rough
+//Have yet to figure out janky row spacing. Not to mention some cluster of row-columns doesn't exactly have
+//the proper column categorization.
