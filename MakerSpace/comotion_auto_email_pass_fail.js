@@ -98,7 +98,6 @@ function sendEmails() {
        sheet.getRange(current_range_row, current_range_is_emailed_col).setValue("false");
      }
     }
-   SpreadsheetApp.flush();
   }
   var emailQuotaRemaining = MailApp.getRemainingDailyQuota();
   Logger.log("Remaining email quota: " + emailQuotaRemaining);
