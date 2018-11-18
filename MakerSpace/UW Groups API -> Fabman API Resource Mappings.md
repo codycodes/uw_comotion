@@ -5,7 +5,7 @@ This is a document which contains a mapping of API calls we're using to transfor
 UW Groups API Endpoint:  
 https://iam-ws.u.washington.edu:7443/group_sws/v1/  
 Fabman API Endpoint:  
-https://fabman.io/api/v1/members
+https://fabman.io/api/v1/
 
 ## Adding members
 ### [Add member to UW Group](https://wiki.cac.washington.edu/display/infra/Groups+WebService+Add+Member)
