@@ -50,9 +50,21 @@ https://fabman.io/api/v1/
   "upfrontMinimumBalance": "0.00"
 }
 ```
+## Getting Groups
+### [Get UW Group]
+  **Subgroups?**
+  **descriptions?**
+### [Get Fabman Group]
+  **Do they exist? figure out what this is**
+
+## Getting Administrators
+### [Get UW Groups Administrators]
+### [Get Fabman Administrators]
+  **How are admins handled**
+
 ## Transforms
 
-### Get Members from UW Group and Post to Fabman
+### Get Members from UW Group and put them into Fabman
 TODO: Figure out the data that we currently have access to fill in (and anything else we'd need access to fill in) and create the JSON file as above; see the example below
 
 ```
@@ -64,4 +76,6 @@ TODO: Figure out the data that we currently have access to fill in (and anything
   "account": 0
 }
 ```
+### Get UW Groups' Groups and put them into Fabman
 
+### Get Administrators from UW Groups and put them into Fabman
