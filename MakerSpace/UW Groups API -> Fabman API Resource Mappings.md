@@ -11,71 +11,52 @@ https://fabman.io/api/v1/
 ### Adding members
 #### [Add member to UW Group](https://wiki.cac.washington.edu/display/infra/Groups+WebService+Add+Member)
 `PUT| (root)/group/{group_id}/member/{member_id}`
+Or use UW Group GUI. 
+
 #### [Add member to Fabman](https://fabman.io/api/v1/documentation#!/members/postMembers)
-`PUT (root)/members`
+`PUT (root)/members` 
 ```
 {
-  "space": 0,
-  "memberNumber": "string",
-  "firstName": "string",
-  "lastName": "string",
-  "gender": "female",
-  "dateOfBirth": "2018-11-18",
-  "emailAddress": "string",
-  "company": "string",
-  "phone": "string",
-  "address": "string",
-  "address2": "string",
-  "city": "string",
-  "zip": "string",
-  "countryCode": "string",
-  "region": "string",
-  "notes": "string",
-  "billingFirstName": "string",
-  "billingLastName": "string",
-  "billingCompany": "string",
-  "billingAddress": "string",
-  "billingAddress2": "string",
-  "billingCity": "string",
-  "billingZip": "string",
-  "billingCountryCode": "string",
-  "billingRegion": "string",
-  "billingInvoiceText": "string",
-  "metadata": {},
-  "createdAt": "2018-11-18",
-  "account": 0,
-  "state": "active",
-  "taxExempt": false,
-  "hasBillingAddress": false,
-  "requireUpfrontPayment": false,
-  "upfrontMinimumBalance": "0.00"
+id:1,
+body:{
+   "memberNumber": "NETID",
+   "note":"member" 
+  }
 }
+
 ```
-### Getting Groups
+Basic member: `"note":"member" `
+Laser Cutter: `"note":"member, lasercutter"`
+WoodShop: `"note":"member,woodshop"`
+
+### Getting Members
 #### [Get UW Group]
-  **Subgroups?**
-  **descriptions?**
+`GET (root)/group/{group_id}/effective-member/`
+Return all members (netids) in the group
+
+`GET (root)/group/{group_id}/effective-member/NETID`
+Return True of False whether the member in the group
+
 #### [Get Fabman Group]
-  **Do they exist? figure out what this is**
+`GET /members/`
+We can use Get /members/ with search queries to look for a user with certain access.
 
 ### Getting Administrators
-#### [Get UW Groups Administrators]
+#### [Get UW Groups Administrators](https://wiki.cac.washington.edu/display/infra/Groups+WebService+Get+Group)
 #### [Get Fabman Administrators]
-  **How are admins handled**
+Use `Get /member/{id}/previlidges` to get whether they are member or admin.
 
 ## Transforms
 ### Get Members from UW Group and put them into Fabman
-TODO: Figure out the data that we currently have access to fill in (and anything else we'd need access to fill in) and create the JSON file as above; see the example below
 
 ```
 {
-  "space": 0,
-  "memberNumber": "UW NetID",
-  "firstName": "First Name from UW Groups API",
-  "notes": "Added on Groups API on 10-31-18 (example from Groups API)",
-  "account": 0
+  "memberNumber": "string", UW NETID
+  "note":"member" 
 }
 ```
-### Get UW Groups' Groups and put them into Fabman
-
+First, add all members from `uw_comotion_makerspace`,
+Then update the users in `uw_comotion_makerspace_lasercutter`, update the note filed. 
+The last would update the note filed of the members in `uw_comotion_makerspace_woodshop`
 ### Get Administrators from UW Groups and put them into Fabman
+All Staff and Mentors should have the admin. We dont need to transfer.
