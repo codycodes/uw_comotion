@@ -59,62 +59,6 @@ The group_id can be a group name (cn) or a regid.`
   **descriptions?**
 #### [Get Fabman Group]
 `GET /members`
-```
-[
-{
-  "space": 0,
-  "memberNumber": "string",
-  "firstName": "string",
-  "lastName": "string",
-  "gender": "female",
-  "dateOfBirth": "2018-12-01",
-  "emailAddress": "string",
-  "company": "string",
-  "phone": "string",
-  "address": "string",
-  "address2": "string",
-  "city": "string",
-  "zip": "string",
-  "countryCode": "string",
-  "region": "string",
-  "notes": "string",
-  "taxExempt": true,
-  "hasBillingAddress": true,
-  "requireUpfrontPayment": true,
-  "upfrontMinimumBalance": 0,
-  "billingFirstName": "string",
-  "billingLastName": "string",
-  "billingCompany": "string",
-  "billingAddress": "string",
-  "billingAddress2": "string",
-  "billingCity": "string",
-  "billingZip": "string",
-  "billingCountryCode": "string",
-  "billingRegion": "string",
-  "billingInvoiceText": "string",
-  "metadata": {},
-  "id": 0,
-  "account": 0,
-  "state": "active",
-  "stripeCustomer": "string",
-  "allowLogin": false,
-  "lockVersion": 0,
-  "createdAt": "2018-12-01",
-  "updatedAt": "2018-12-01",
-  "updatedBy": 0,
-  "lastActivity": {
-    "id": 0,
-    "at": "2018-12-01",
-    "resource": {
-      "id": 0,
-      "name": "string",
-      "state": "active"
-    }
-  },
-  "_embedded": "string"
-}
-]
-```
 
 ### Getting Administrators
 #### [Get UW Groups Administrators]
