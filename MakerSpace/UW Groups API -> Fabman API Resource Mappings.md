@@ -53,15 +53,82 @@ https://fabman.io/api/v1/
 ```
 ### Getting Groups
 #### [Get UW Group]
+`GET| (root)/group/{group_id}
+The group_id can be a group name (cn) or a regid.`
   **Subgroups?**
   **descriptions?**
 #### [Get Fabman Group]
-  **Do they exist? figure out what this is**
+`GET /members`
+```
+[
+{
+  "space": 0,
+  "memberNumber": "string",
+  "firstName": "string",
+  "lastName": "string",
+  "gender": "female",
+  "dateOfBirth": "2018-12-01",
+  "emailAddress": "string",
+  "company": "string",
+  "phone": "string",
+  "address": "string",
+  "address2": "string",
+  "city": "string",
+  "zip": "string",
+  "countryCode": "string",
+  "region": "string",
+  "notes": "string",
+  "taxExempt": true,
+  "hasBillingAddress": true,
+  "requireUpfrontPayment": true,
+  "upfrontMinimumBalance": 0,
+  "billingFirstName": "string",
+  "billingLastName": "string",
+  "billingCompany": "string",
+  "billingAddress": "string",
+  "billingAddress2": "string",
+  "billingCity": "string",
+  "billingZip": "string",
+  "billingCountryCode": "string",
+  "billingRegion": "string",
+  "billingInvoiceText": "string",
+  "metadata": {},
+  "id": 0,
+  "account": 0,
+  "state": "active",
+  "stripeCustomer": "string",
+  "allowLogin": false,
+  "lockVersion": 0,
+  "createdAt": "2018-12-01",
+  "updatedAt": "2018-12-01",
+  "updatedBy": 0,
+  "lastActivity": {
+    "id": 0,
+    "at": "2018-12-01",
+    "resource": {
+      "id": 0,
+      "name": "string",
+      "state": "active"
+    }
+  },
+  "_embedded": "string"
+}
+]
+```
 
 ### Getting Administrators
 #### [Get UW Groups Administrators]
 #### [Get Fabman Administrators]
   **How are admins handled**
+  * Administrator
+    * Can edit members, equipment and packages.
+    * Can configure your space: rename it, change opening hours and add holidays.
+    * Can use any equipment without a package or training.
+    * Can turn on equipiment while it's not connected to the internet.
+    * Can add and remove other administrators.
+  * Account owner
+    * Has full control over your account.
+    * Can add and remove other account owners.
 
 ## Transforms
 ### Get Members from UW Group and put them into Fabman
