@@ -63,20 +63,12 @@ The group_id can be a group name (cn) or a regid.`
 ### Getting Administrators
 #### [Get UW Groups Administrators]
 #### [Get Fabman Administrators]
-  **How are admins handled**
-  * Administrator
-    * Can edit members, equipment and packages.
-    * Can configure your space: rename it, change opening hours and add holidays.
-    * Can use any equipment without a package or training.
-    * Can turn on equipiment while it's not connected to the internet.
-    * Can add and remove other administrators.
-  * Account owner
-    * Has full control over your account.
-    * Can add and remove other account owners.
 
 ## Transforms
 ### Get Members from UW Group and put them into Fabman
 TODO: Figure out the data that we currently have access to fill in (and anything else we'd need access to fill in) and create the JSON file as above; see the example below
+
+#### Uses [Adding members](#adding-members) resources
 
 ```
 {
