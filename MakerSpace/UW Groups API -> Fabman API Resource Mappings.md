@@ -5,12 +5,12 @@ This is a document which contains a mapping of API calls we're using to transfor
 ## General Information
 ### Root URLS
 UW Groups API Endpoint:  
-https://iam-ws.u.washington.edu/group_sws/v3
+https://iam-ws.u.washington.edu/group_sws/v3 
 Fabman API Endpoint:  
-https://fabman.io/api/v1/
+https://fabman.io/api/v1/ 
 
 ### API Docs:
-[UW Groups API v3](https://iam-tools.u.washington.edu/apis/gws/)
+[UW Groups API v3](https://iam-tools.u.washington.edu/apis/gws/) 
 [Fabman API v1](https://fabman.io/api/v1/documentation#/)
 
 ## Resources
@@ -166,7 +166,7 @@ GET `/group/{groupid}` - Gives a lot of information including direct/indirect me
   }
 }
 ```
-#### [Get Fabman Group]
+#### [Get Fabman Group](https://fabman.io/api/v1/documentation#!/members/getMembers)
 GET `/members` - See the list inside of the `uw_groups` key in the metadata; we might need to change or just filter this to see the correct members
 ```
 {
