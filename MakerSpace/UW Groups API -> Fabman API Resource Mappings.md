@@ -30,7 +30,6 @@ POST `/api-keys`
   "label": "azure-function-12-16-18",
   "member": memberId
 }
-
 ```
 
 GET `/api-keys/{id}/token` - response back is the token for Fabman
