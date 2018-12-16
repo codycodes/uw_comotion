@@ -6,8 +6,14 @@ This is a document which contains a mapping of API calls we're using to transfor
 ### Root URLS
 UW Groups API Endpoint:  
 https://iam-ws.u.washington.edu/group_sws/v3
+https://iam-ws.u.washington.edu/group_sws/v3 
+
 Fabman API Endpoint:  
-https://fabman.io/api/v1/
+https://fabman.io/api/v1/ 
+
+### API Docs:
+[UW Groups API v3](https://iam-tools.u.washington.edu/apis/gws/) 
+[Fabman API v1](https://fabman.io/api/v1/documentation#/)
 
 ### API Docs:
 [UW Groups API v3](https://iam-tools.u.washington.edu/apis/gws/)
@@ -19,6 +25,7 @@ TODO: adapt this to the language that we're going to use
 need to get api token by calling members to get memberId
 
 ## Resources
+
 
 ### Getting API token
 Have to create it first by POSTing the target member ID to:
@@ -37,6 +44,14 @@ GET `/api-keys/{id}/token` - response back is the token for Fabman
 
 NOTE: API keys don’t expire automatically. If you ever need to invalidate an API key, you can simply delete it.
 
+### Adding members
+#### [Add member to UW Group](https://iam-tools.u.washington.edu/apis/gws/#/Membership/putMember)
+PUT `/group/{groupid}/member/{memberid}` - Used to put one or multiple members into the UW Group
+#### [Add member to Fabman](https://fabman.io/api/v1/documentation#!/members/postMembers)
+POST `/members` - Overall JSON data looks like the following. See [Get Members from UW Group and put them into Fabman](#Get-Members-from-UW-Group-and-put-them-into-Fabman) for the actual data we'll be passing in
+```
+{
+=======
 ### Adding members
 #### [Add member to UW Group](https://iam-tools.u.washington.edu/apis/gws/#/Membership/putMember)
 PUT `/group/{groupid}/member/{memberid}` - Used to put one or multiple members into the UW Group
