@@ -49,7 +49,6 @@ PUT `/group/{groupid}/member/{memberid}` - Used to put one or multiple members i
 #### [Add member to Fabman](https://fabman.io/api/v1/documentation#!/members/postMembers)
 POST `/members` - Overall JSON data looks like the following. See [Get Members from UW Group and put them into Fabman](#Get-Members-from-UW-Group-and-put-them-into-Fabman) for the actual data we'll be passing in
 
-{
 ### Adding members
 #### [Add member to UW Group](https://iam-tools.u.washington.edu/apis/gws/#/Membership/putMember)
 PUT `/group/{groupid}/member/{memberid}` - Used to put one or multiple members into the UW Group
