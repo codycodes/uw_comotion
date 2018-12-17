@@ -6,7 +6,6 @@ This is a document which contains a mapping of API calls we're using to transfor
 ### Root URLS
 UW Groups API Endpoint:  
 https://iam-ws.u.washington.edu/group_sws/v3
-https://iam-ws.u.washington.edu/group_sws/v3
 
 Fabman API Endpoint:  
 https://fabman.io/api/v1/
